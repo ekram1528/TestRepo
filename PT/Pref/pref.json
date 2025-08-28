@@ -1,0 +1,50 @@
+{
+  "request":[
+    {
+      "transactionName":"",
+      "rampUp":{
+        "totalVU": 10,
+        "initialdelay":0,
+        "rampupVU":2,
+        "rampduration":1,
+        "holdrampup": 1,
+        "duration":2
+        
+      },
+      "api":[
+        {
+          "name": "Api Name",
+          "method": "method Name",
+          "url" : "",
+          "headers": {
+            
+          },
+          "validate":[
+            {
+              "validation_type": "response_code",
+              "condition": "equals",
+              "text": "200",
+              "scope": "all"
+            }
+          ]
+        },
+        {
+          "name": "Api Name",
+          "method": "method Name",
+          "url" : "",
+          "headers": {
+            
+          },
+          "validate":[
+            {
+              "validation_type": "response_code",
+              "condition": "equals",
+              "text": "200",
+              "scope": "all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
