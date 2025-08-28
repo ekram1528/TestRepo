@@ -14,7 +14,7 @@
       "api":[
         {
           "name": "Api Name",
-          "method": "method Name",
+          "method": "GET",
           "url" : "",
           "headers": {
             
@@ -30,8 +30,17 @@
         },
         {
           "name": "Api Name",
-          "method": "method Name",
+          "method": "POST",
           "url" : "",
+          "bodyfile":"data/test.json",
+          "datafiles":[
+            {
+              "name":"data/test1.csv",
+              "varibale":"",
+              "delimiter":",",
+              "ignorefirst":true
+            }
+          ],
           "headers": {
             
           },
@@ -41,8 +50,16 @@
               "condition": "equals",
               "text": "200",
               "scope": "all"
+            },
+            {
+              "validation_type": "response_data",
+              "condition": "contains",
+              "text": "test",
+              "scope": "all"
             }
+            
           ]
+          
         }
       ]
     }
