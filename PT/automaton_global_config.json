@@ -1,0 +1,21 @@
+{
+  "project_name": "Write here Project Name",
+  "slack": "Slack channel name",
+  "email":["",""],
+  "variables":{"scmurl":"",
+                "giturl":""
+  },
+  "flow":{
+    "flowName":{
+      "agent":"Jmemter",
+      "appurl":"",
+      "duration":"",
+      "vu":"",
+      "timeout":"",
+      "dc_load_distribution":{
+        "scus-dev-aperf1":100
+      },
+      "config":""
+    }
+  }
+}
